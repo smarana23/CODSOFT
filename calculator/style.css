@@ -1,0 +1,89 @@
+body {
+  background: #f0f4f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.calculator {
+  background: #0d063e; /* light green */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+#display {
+  width: 90%;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  color: black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0e7ff;
+  transition: 0.2s ease;
+  width: 100%;
+  
+}
+
+button:hover {
+  background-color: #c7d2fe;
+}
+
+/* Operator buttons */
+.operator {
+  background-color: #ffc04d; /* yellowish-orange */
+}
+
+.operator:hover {
+  background-color: #ffb733;
+}
+
+/* Delete button */
+.delete {
+  background-color: #ff6666; /* red */
+}
+
+.delete:hover {
+  background-color: #ff4d4d;
+}
+
+/* Equal (=) button */
+.equal {
+  background-color: #4CAF50; /* green */
+  color: white;
+}
+
+.equal:hover {
+  background-color: #45a049;
+}
